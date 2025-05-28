@@ -3,9 +3,8 @@ FROM ubuntu:latest
 RUN apt-get update && apt-get install -y \
   python3.10 \
   python3-pip \
+  python-yaml \
   git
-
-RUN python setup.py install
 
 COPY feed.py /usr/bin/feed.py
 
